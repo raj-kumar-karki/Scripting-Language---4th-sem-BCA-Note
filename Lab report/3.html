@@ -1,0 +1,30 @@
+<!-- 3.Write a JavaScript program to validate password and re-type password validation. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>re-type password validation</title>
+</head>
+<body>
+		<script type="text/javascript">  
+	function matchpass()
+	{  
+		var firstpassword=document.f1.password.value;  
+		var secondpassword=document.f1.password2.value;  		  
+		if(firstpassword==secondpassword)
+		{  
+			alert("Password successful");
+		}  
+		else
+		{  
+			alert("Sorry!!! Incorrect password");  
+		}  
+	}  
+	</script>  	  
+	<form name="f1" action="register.php" onsubmit="matchpass()">  
+	Password:	      <input type="password" name="password" ><br>  
+	Re-enter Password:<input type="password" name="password2"><br>  
+	<input type="submit">  
+	</form>  
+</body>
+</html>

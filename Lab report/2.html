@@ -1,0 +1,28 @@
+<!-- 2.Write a JavaScript  program to validate only number validation. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number validation only</title>
+</head>
+<body>
+<script>  
+	function validate()
+	{  
+		var num=document.myform.num.value;  
+		if(isNaN(num))
+		{ 
+			  document.write("Wrong!!!: Please Enter the number"); 
+		 }
+		else
+		{
+			document.write("Right: Successful Accepted & and number is:"+num); 
+		}  
+	}
+</script> 
+	<form name="myform" onsubmit="validate()" >  
+		Number: <input type="text" name="num"><br>  
+		<input type="submit" value="submit">  
+	</form>  
+</body>
+</html>  
